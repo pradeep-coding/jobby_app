@@ -150,7 +150,7 @@ class JobItem extends Component {
     } = JobDetails
     return (
       <>
-        <div className="job-card">
+        <div className="detail-job-card">
           <div className="top-container">
             <img
               src={companyLogoUrl}
@@ -166,16 +166,16 @@ class JobItem extends Component {
             </div>
           </div>
           <div className="info-container">
-            <div className="location-type-container">
-              <div className="location-container">
+            <ul className="location-type-container">
+              <li className="location-container">
                 <MdLocationOn />
                 <p className="location">{location}</p>
-              </div>
-              <div className="job-type-container">
+              </li>
+              <li className="job-type-container">
                 <BsBriefcaseFill />
                 <p className="employment-type">{employmentType}</p>
-              </div>
-            </div>
+              </li>
+            </ul>
             <p className="package">{packagePerAnnum}</p>
           </div>
           <hr className="h-line" />
@@ -193,7 +193,7 @@ class JobItem extends Component {
             <h1>Skills</h1>
             <ul className="skills">
               {skills.map(skill => (
-                <li className="skill">
+                <li className="skill" key={skill.name}>
                   <img
                     src={skill.image_url}
                     alt={skill.name}

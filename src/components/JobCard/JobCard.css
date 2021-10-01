@@ -25,6 +25,7 @@
 .location-type-container {
   display: flex;
   align-items: center;
+  padding-left: 0px;
 }
 
 .rating-container {

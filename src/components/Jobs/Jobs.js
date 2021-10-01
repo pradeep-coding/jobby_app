@@ -65,8 +65,8 @@ class Jobs extends Component {
   }
 
   componentDidMount() {
-    this.getJobs()
     this.getUserDetails()
+    this.getJobs()
   }
 
   getJobs = async () => {

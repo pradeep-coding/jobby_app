@@ -15,10 +15,12 @@
   align-items: center;
 }
 
-.job-card {
+.detail-job-card {
   width: 90%;
   margin-top: 40px;
   padding: 20px;
+  background-color: #272727;
+  border-radius: 10px;
 }
 
 .description-header {
